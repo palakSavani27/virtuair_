@@ -6,6 +6,7 @@ import { Menu, X } from "lucide-react";
 const Nav = ({ setShowLogin, token, setToken }) => {
     const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
     const [currState, setCurrState] = useState("Login");
+
     const toggleNavbar = () => {
         setMobileDrawerOpen(!mobileDrawerOpen);
     };
@@ -47,7 +48,7 @@ const Nav = ({ setShowLogin, token, setToken }) => {
                             Sign In
                         </a>
                             <button
-                                onClick={() => setShowLogin(true)}
+                                onClick={() => {setShowLogin(true);}}
                                 className="hidden lg:flex bg-gradient-to-r from-orange-500 to-orange-800 py-2 px-3 rounded-md"
                             >
                                 Create an account

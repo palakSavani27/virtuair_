@@ -15,7 +15,7 @@ const HeroSection = () => {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod beatae nostrum inventore hic qui. Illum architecto illo animi, dolorum ipsum explicabo natus suscipit nesciunt, sunt dolorem magnam fuga debitis in!
             </p>
             <div className='flex justify-center my-10'>
-                <a href="#" className='bg-gradient-to-r from-orange-500 to-orange-800 py-3 px-4 mx-3 rounded-md' >
+                <a href="#" className='bg-gradient-to-r from-orange-500 to-orange-800 py-3 px-4 mx-3   rounded-md' >
                     Start for free
                 </a>
                 <a href="#" className='py-3 px-4 mx-3 rounded-md border'>Documentation</a>

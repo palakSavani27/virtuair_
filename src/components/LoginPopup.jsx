@@ -18,6 +18,7 @@ const LoginPopup = ({ setShowLogin, setToken }) => {
 
     const onLogin = async (event) => {
         event.preventDefault();
+        console.warn({data});
         alert("Login Successfully");
         localStorage.setItem("token", "123456");
         setToken("123456");
