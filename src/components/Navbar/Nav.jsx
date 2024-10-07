@@ -29,6 +29,7 @@ const Nav = ({ setShowLogin, token, setToken }) => {
                             <span className="text-xl tracking-tight">VirtualR</span>
                         </div>
                     </a>
+
                     <ul className='hidden lg:flex ml-14 space-x-12'>
                         {navItems.map((item, index) => (
                             <li key={index}>
@@ -39,20 +40,20 @@ const Nav = ({ setShowLogin, token, setToken }) => {
 
                     {!token ? (
                         <> <a
-                        href="#"
-                        className="hidden lg:flex  py-2 px-3 border rounded-md"
-                        onClick={() => {setShowLogin(true); }}
-                    >
-                        Sign In
-                    </a>
-                    <button
-                            onClick={() => setShowLogin(true)}
-                            className="hidden lg:flex bg-gradient-to-r from-orange-500 to-orange-800 py-2 px-3 rounded-md"
+                            href="#"
+                            className="hidden lg:flex  py-2 px-3 border rounded-md"
+                            onClick={() => { setShowLogin(true); }}
                         >
-                            Create an account
-                        </button>
-                    </>
-                       
+                            Sign In
+                        </a>
+                            <button
+                                onClick={() => setShowLogin(true)}
+                                className="hidden lg:flex bg-gradient-to-r from-orange-500 to-orange-800 py-2 px-3 rounded-md"
+                            >
+                                Create an account
+                            </button>
+                        </>
+
                     ) : (
                         <div className="navbar-profile">
                             <ul className="nav-profile-dropdown">
@@ -86,7 +87,7 @@ const Nav = ({ setShowLogin, token, setToken }) => {
                                     <a
                                         href="#"
                                         className="py-2 px-3 border rounded-md"
-                                        onClick={() => {setShowLogin(true); }}
+                                        onClick={() => { setShowLogin(true); }}
                                     >
                                         Sign In
                                     </a>
