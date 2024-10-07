@@ -8,3 +8,9 @@
   font-family: "Poppins", sans-serif;
   color-scheme: dark;
 }
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+}
